@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: taskflow
+  datasource:
+    url : jdbc:h2:file:./db/taskflow_storage;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+    user:
+      name: user
+      password: password
+
+jwt:
+  secret: "your_super_secret_key_that_is_long_enough_for_security_2026"
+  expiration : 86400000
