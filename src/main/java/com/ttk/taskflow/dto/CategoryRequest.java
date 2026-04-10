@@ -1,4 +1,4 @@
 package com.ttk.taskflow.dto;
 
-public class TaskCategory {
+public record CategoryRequest(String categoryName, String categoryDescription ) {
 }
